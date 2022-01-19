@@ -84,3 +84,27 @@ print('ddd' + 'eee')
 print('fff' * 3)
 print('ab' in 'abcde')
 print('ab' in 'cd')
+
+"""
+布尔类型
+    用来表示真值或假值
+    使用True和False表示布尔类型的值
+    可转化为数值，True表示1，False表示0
+    所有对象都有一个布尔值，使用内置函数bool()进行测试
+    布尔值为假的情况
+        False或者None
+        数值中的0，包含0，0.0，虚数0
+        空序列，包含空字符串，空数组，空列表，空字典
+        自定义对象的实例，该对象的__bool__()方法返回False或者__len__()方法返回0
+"""
+x = True
+print(x, type(x))
+print(True + 10)  # 1+10
+print(False + 10)  # 0+10
+print(bool(12))
+print(bool(0), bool(0.0))
+print(bool('ss'))
+print(bool(''))
+print(bool(True))
+print(bool(False))
+print(bool(None))
